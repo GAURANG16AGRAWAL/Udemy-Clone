@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#myLinks{
+  display: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2 {
+  font-family: SuisseWorks;
+}
+#header {
+  display: flex;
+  background: white;
+}
+#udemy_logo {
+  width: 100px;
+  border: 1px solid white;
+  height: 50px;
+}
+#search_box > input {
+  flex-grow: 2;
+  border: 1px solid white;
+  width: 95%;
+  height: 30px;
+  margin-right: 15px;
+
+  outline: none;
+}
+.search-btn {
+  width: 20px;
+  height: 20px;
+}
+#search_box {
+  flex-grow: 2;
+  margin-bottom: 1%;
+  display: flex;
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 40px;
+}
+.header_text {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 20px;
+}
+
+#sign_up {
+  background: black;
+  border: 1px solid black;
+  width: 90px;
+  margin: 10px 3px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-radius: 30px;
+}
+#log_in {
+  background: white;
+  border: 1px solid black;
+  width: 90px;
+  margin: 10px auto;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-radius: 30px;
+}
+/* #log_in:hover{
+    background-color:;
+   } */
+
+#cart {
+  background: white;
+  border: 0px solid black;
+}
+#cart > img {
+  width: 30px;
+  height: 30px;
+}
+#globe {
+  background: white;
+  border: 1px solid black;
+  margin: 10px 3px;
+}
+#globe > img {
+  width: 20px;
+  height: 20px;
+}
+
+* {
+  margin: 5px;
+}
+
+.color {
+  color: white;
+}
+#sign_up_page{
+  display: grid;
+  align-items: center;
+  gap: 2%;
+  margin-left: 35%;
+  margin-right: 35%;
+  
+  }
+  #top{
+  display: grid;
+  grid-template-rows: 10% 70%;
+  gap: 15%;
+  }
+  .already{
+  /* align-items: center; */
+  display: flex;
+  gap: 2%;
+  text-align: center;
+  
+  }
+  .name{
+  padding: 3%;
+  font-size: 20px;
+  }
+  .sign{
+  padding: 3%;
+  background-color: purple;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  }
+  .color_1{
+  color: black;
+  }
+  
+  #log_in > a {
+      color:black;
+      text-decoration: none;
+  }
+  #sign_up > a {
+      color:white;
+      text-decoration: none;
+  }
+  html,body {
+      height:100%;
+  }
+  #sign-btn:hover{
+     background-color: darkgrey;
+  }
+@media only screen and (max-width: 800px) {
+  #myLinks{
+    display: none;
+  }
+    #udemy_logo {
+      width: 70px;
+      height: 40px;
+    }
+    .header_text {
+      display: none;
+    }
+    #cart {
+      display: none;
+    }
+    #globe {
+      display: none;
+    }
+    .Categories_btn {
+      display: none;
+    }
+    #sign_up{
+      display: none !important
+    }
+    #log_in{
+      display: none !important;
+    }
+    .leftbox {
+      width: 250px;
+    }
+    #log_in {
+      display: flex;
+      text-align: center;
+    }
+    #sign_up {
+      display: flex;
+      text-align: center;
+    }
+    #sign_up_page{
+      margin-top: 6rem;
+      width: 70%;
+      margin-left: 15%;
+    }
+    
+}
+@media only screen and ((min-width:800px ) and (max-width:1400px)){
+  #myLinks{
+    display: none;
+  }
+  #udemy_logo {
+    width: 70px;
+    height: 40px;
+  }
+  .header_text {
+    display: none;
+  }
+  #cart {
+    display: none;
+  }
+  #globe {
+    display: none;
+  }
+  .Categories_btn {
+    display: none;
+  }
+  #sign_up{
+    display: none !important
+  }
+  #log_in{
+    display: none !important;
+  }
+  .leftbox {
+    width: 250px;
+  }
+  #log_in {
+    display: flex;
+    text-align: center;
+  }
+  #sign_up {
+    display: flex;
+    text-align: center;
+  }
+  #sign_up_page{
+    margin-top: 6rem;
+    width: 70%;
+    margin-left: 15%;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  .ham{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+   }
+    .active {
+      background-color:white;
+      color: white;
+    }
+  .mobile-menu-toggle {
+      display: block; /* Display the hamburger menu button */
+      cursor: pointer;
+  }
+
+  #myLinks.active {
+      display: block;
+      position: absolute;
+      top: 4rem;
+      width: 100vw; /* Display the navigation links when active */
+  }
+
+  .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      margin: 5px 0;
+      transition: 0.4s;
+  }
+
+  .mobile-menu-toggle.active .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 5px);
+  }
+
+  .mobile-menu-toggle.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .mobile-menu-toggle.active .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -5px);
+  }
+}
